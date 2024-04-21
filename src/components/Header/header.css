@@ -42,6 +42,12 @@ select {
 
 .mainLogo {
    font-weight: 500;
+   cursor: pointer;
+   transition: all 0.2s ease;
+}
+
+.mainLogo:hover {
+   color: rgb(231, 236, 231);
 }
 
 @media screen and (max-width: 600px) {

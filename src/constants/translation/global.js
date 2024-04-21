@@ -10,6 +10,8 @@ export const languageFlags = {
    pl: "🇵🇱", // Polish
 };
 
+export const DEFAULT_LANGUAGE = 'de'
+
 export const languages = {
    ar: {
       choose_region: "يرجى اختيار منطقتك:",

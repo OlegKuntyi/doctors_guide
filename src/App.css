@@ -19,7 +19,7 @@
 .firstPageImageBlock {
    height: 40vh;
    width: 100%;
-   background: url("../assets/first_page_bg.png");
+   background: url("./assets/first_page_bg.png");
    background-repeat: no-repeat;
    background-size: cover;
    background-position: 50% 50%;

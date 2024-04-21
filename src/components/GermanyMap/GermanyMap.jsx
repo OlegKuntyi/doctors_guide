@@ -36,6 +36,7 @@ import state14 from "../../assets/states/Berlin.svg";
 import state15 from "../../assets/states/Bremen.svg";
 import state16 from "../../assets/states/Hessen.svg";
 import state17 from "../../assets/states/Hamburg.svg";
+import { localStorageGet, localStorageSet } from "../../utils/localStorage";
 
 // Individual state component
 const StateComponent = ({ id, idx, name, img, x, y, onClick }) => {
@@ -162,7 +163,7 @@ const germanyStates = [
 ];
 
 const GermanyMap = () => {
-   const storedRegion = localStorage.getItem("selectedRegion");
+   const storedRegion = localStorageGet("selectedRegion", "");
    const initialRegion = storedRegion ? storedRegion : null;
    const [selectedRegion, setSelectedRegion] = useState(initialRegion);
 
@@ -172,7 +173,7 @@ const GermanyMap = () => {
 
    useEffect(() => {
       if (selectedRegion) {
-         localStorage.setItem("selectedRegion", selectedRegion);
+         localStorageSet("selectedRegion", selectedRegion);
       } else {
          localStorage.removeItem("selectedRegion");
       }
@@ -180,7 +181,7 @@ const GermanyMap = () => {
 
    // Restore selected region from local storage on component mount
    useEffect(() => {
-      const storedRegion = localStorage.getItem("selectedRegion");
+      const storedRegion = localStorageGet("selectedRegion", "");
       if (storedRegion) {
          setSelectedRegion(storedRegion);
       }

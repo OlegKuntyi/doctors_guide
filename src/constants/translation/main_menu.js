@@ -1,9 +1,9 @@
-import docIcon from "../../../assets/doc.svg";
-import examIcon from "../../../assets/exam.svg";
-import linksIcon from "../../../assets/links.svg";
-import learnLangIcon from "../../../assets/exam_prep.svg";
-import workIcon from "../../../assets/work.svg";
-import unique from "../../../assets/unique.svg";
+import docIcon from "../../assets/doc.svg";
+import examIcon from "../../assets/exam.svg";
+import linksIcon from "../../assets/links.svg";
+import learnLangIcon from "../../assets/exam_prep.svg";
+import workIcon from "../../assets/work.svg";
+import unique from "../../assets/unique.svg";
 
 export const languagesMainMenu = {
    de: {
@@ -111,7 +111,7 @@ export const main_menu_items = {
                uk: "Необхідні документи",
                ru: "Необходимые документы",
                de: "Erforderliche Dokumente",
-               link: "/required-documents",
+               link: "/documents",
             },
             {
                en: "Document Collection",
