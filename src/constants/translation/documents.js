@@ -7,7 +7,7 @@ const defaultProps = {
    application: "-",
    translation: "-",
    ready_copies: "-",
-   sent: '-'
+   sent: "-",
 };
 
 // Подача заяви
@@ -20,7 +20,7 @@ export const documents = [
    },
    {
       ...defaultProps,
-      category: "Свідоцтво про народження чи виписка із сімейноW книги",
+      category: "Свідоцтво про народження чи виписка із сімейної книги",
       English: "Birth Certificate",
       German: "Geburtsurkunde / Auszug aus dem Familienbuch",
    },
@@ -35,7 +35,7 @@ export const documents = [
    {
       ...defaultProps,
       category:
-         "Витяг з штрафових регістрів із всіх краWн де ви перебували останніх 5 років (може бути не старшим ніж 3 місяці до моменту подання заяви)",
+         "Витяг з штрафових регістрів із всіх країн де ви перебували останніх 5 років (може бути не старшим ніж 3 місяці до моменту подання заяви)",
       English: "Police Clearance",
       German:
          "Vitja из штрафових регістрів із всіх країн, де ви перебували останніх 5 років",
@@ -78,7 +78,8 @@ export const documents = [
    {
       ...defaultProps,
       optional: "optional",
-      category: "Доказ про проходження практичних навичок протягом навчання (опціонально)",
+      category:
+         "Доказ про проходження практичних навичок протягом навчання (опціонально)",
       English: "",
       German: "",
    },
@@ -97,7 +98,8 @@ export const documents = [
    {
       ...defaultProps,
       optional: "optional",
-      category: "Сертифікти про пройдені курси підвищення кваліфікації (опціонально)",
+      category:
+         "Сертифікти про пройдені курси підвищення кваліфікації (опціонально)",
       English: "Course Certificates",
       German: "Сертифікти про пройдені курси підвищення кваліфікації",
    },
