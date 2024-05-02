@@ -14,7 +14,6 @@ const BodyItem = ({ row, columns, index, tableFor, maxWordsLength = 20 }) => {
          {columns?.map((column, columnIndex) => (
             <td key={`cell-${index}-${columnIndex}`}>
                {row?.[column?.name] === "-" && (
-                  // <input className={styles.checkbox} type="checkbox" />
                   <Form.Check
                      type="checkbox"
                      id="checkbox"

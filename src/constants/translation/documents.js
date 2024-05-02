@@ -10,6 +10,7 @@ const defaultProps = {
    sent: '-'
 };
 
+// Подача заяви
 export const documents = [
    {
       ...defaultProps,
@@ -26,7 +27,7 @@ export const documents = [
    {
       ...defaultProps,
       optional: "optional",
-      category: "Свідоцтво про зміну імя чи прізвища",
+      category: "Свідоцтво про зміну імя чи прізвища (опціонально)",
       English: "Proof of Name Change",
       German:
          "Bei Namensänderung: Nachweis / Urkunde über die Änderung des Namens",
@@ -50,7 +51,7 @@ export const documents = [
       ...defaultProps,
       optional: "optional",
       category:
-         "Довідка із попереднього місця роботи, що ви без обмежень могли працювати по професі",
+         "Довідка із попереднього місця роботи, що ви без обмежень могли працювати по професії (опціонально)",
       English: "Employment Certificate",
       German: "Довідка із попереднього місця роботи",
    },
@@ -77,7 +78,7 @@ export const documents = [
    {
       ...defaultProps,
       optional: "optional",
-      category: "Доказ про проходження практичних навичок протягом навчання",
+      category: "Доказ про проходження практичних навичок протягом навчання (опціонально)",
       English: "",
       German: "",
    },
@@ -96,7 +97,7 @@ export const documents = [
    {
       ...defaultProps,
       optional: "optional",
-      category: "Сертифікти про пройдені курси підвищення кваліфікаціЇ",
+      category: "Сертифікти про пройдені курси підвищення кваліфікації (опціонально)",
       English: "Course Certificates",
       German: "Сертифікти про пройдені курси підвищення кваліфікації",
    },

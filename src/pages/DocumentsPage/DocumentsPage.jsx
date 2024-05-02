@@ -21,12 +21,10 @@ const DocumentsPage = () => {
                   <h1>Documents</h1>
                   <Table
                      columns={[
-                        { name: "optional", label: "Опціонально" },
                         { name: "category", label: "Документи" },
                         { name: "is_exist", label: "Наявно" },
                         { name: "apostile", label: "Апостиль" },
                         { name: "notary", label: "Завірено нотаріусом" },
-                        { name: "application", label: "Подача заяви" },
                         { name: "translation", label: "Професійний переклад" },
                         { name: "ready_copies", label: "Завірені копії" },
                         { name: "sent", label: "Відправлено" },

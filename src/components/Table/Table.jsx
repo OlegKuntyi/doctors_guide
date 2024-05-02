@@ -12,6 +12,8 @@ const Table = ({
    return (
       <div style={{ maxHeight }} className={styles.table_container}>
          <table className={cn(styles.table)}>
+            <div className={styles.title}>Подача заяви</div>
+
             <thead className={styles.thead}>
                <tr>
                   {columns?.map((column, index) => (
