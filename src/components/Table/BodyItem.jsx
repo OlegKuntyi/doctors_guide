@@ -9,7 +9,7 @@ const BodyItem = ({ row, columns, index, tableFor, maxWordsLength = 20 }) => {
    return (
       <tr
          key={`row-${index}`}
-         className={cn(index % 2 === 0 ? styles.rowOdd : "")}
+         className={cn(index % 2 === 0 ? "" : styles.rowOdd)}
       >
          {columns?.map((column, columnIndex) => (
             <td key={`cell-${index}-${columnIndex}`}>

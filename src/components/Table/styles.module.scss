@@ -31,7 +31,7 @@
    width: 100%;
    position: relative;
    border-spacing: 10px;
-
+   
    td {
       position: relative;
       border: solid 1px transparent;
@@ -149,7 +149,8 @@
    text-align: center;
    font-weight: 600;
    font-size: 15px;
-   color: rgb(224, 224, 212);
+   color: #e9e9e9;
    padding-top: 5px;
+   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
    text-transform: uppercase;
 }
