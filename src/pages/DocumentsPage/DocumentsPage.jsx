@@ -18,10 +18,9 @@ const DocumentsPage = () => {
             <div className="firstPageImageBlock"></div>
             <div className={"main_menu__content"}>
                <div className={styles.table_wrapper}>
-                  <h1>Documents</h1>
                   <Table
                      columns={[
-                        { name: "category", label: "Документи" },
+                        { name: "category", label: "Документ" },
                         { name: "is_exist", label: "Наявно" },
                         { name: "apostile", label: "Апостиль" },
                         { name: "notary", label: "Завірено нотаріусом" },
