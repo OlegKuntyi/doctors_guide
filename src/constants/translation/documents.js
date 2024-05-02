@@ -12,7 +12,6 @@ const defaultProps = {
 
 // Подача заяви
 export const documents = [
-   {test: "title"},
    {
       ...defaultProps,
       category: "Пітвердження особистості (Закордонний паспорт або паспорт)",

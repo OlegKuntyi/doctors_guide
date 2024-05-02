@@ -1,7 +1,6 @@
 .table_container {
    overflow-y: auto;
    overflow-x: hidden;
-   padding-right: 5px;
    min-height: 48vh;
    position: relative;
    width: 100%;
@@ -31,7 +30,7 @@
    width: 100%;
    position: relative;
    border-spacing: 10px;
-   
+
    td {
       position: relative;
       border: solid 1px transparent;
@@ -144,13 +143,14 @@
 }
 
 .title {
-   position: absolute;
    width: 100%;
    text-align: center;
    font-weight: 600;
    font-size: 15px;
    color: #e9e9e9;
-   padding-top: 5px;
-   text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em blue;
+   padding-top: 10px;
+   background-color: rgba(0, 0, 0, 0.547);
+   padding-bottom: 10px;
+   text-shadow: 1px 1px 2px blue, 0 0 1em green, 0 0 0.2em yellow;
    text-transform: uppercase;
 }
