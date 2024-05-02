@@ -1,54 +1,103 @@
+const defaultProps = {
+   optional: "",
+   category: "-",
+   is_exist: "-",
+   apostile: "-",
+   notary: "-",
+   application: "-",
+   translation: "-",
+   ready_copies: "-",
+   sent: '-'
+};
+
 export const documents = [
    {
-       category: "Proof of Identity (Passport or ID)",
-       English: "Proof of Identity (Passport or ID)",
-       German: "Identitätsnachweis (z. B. Reisepass oder Ausweis)"
+      ...defaultProps,
+      category: "Пітвердження особистості (Закордонний паспорт або паспорт)",
+      English: "",
+      German: "",
    },
    {
-       category: "Birth Certificate",
-       English: "Birth Certificate",
-       German: "Geburtsurkunde / Auszug aus dem Familienbuch"
+      ...defaultProps,
+      category: "Свідоцтво про народження чи виписка із сімейноW книги",
+      English: "Birth Certificate",
+      German: "Geburtsurkunde / Auszug aus dem Familienbuch",
    },
    {
-       category: "Proof of Name Change",
-       English: "Proof of Name Change",
-       German: "Bei Namensänderung: Nachweis / Urkunde über die Änderung des Namens"
+      ...defaultProps,
+      optional: "optional",
+      category: "Свідоцтво про зміну імя чи прізвища",
+      English: "Proof of Name Change",
+      German:
+         "Bei Namensänderung: Nachweis / Urkunde über die Änderung des Namens",
    },
    {
-       category: "Police Clearance",
-       English: "Police Clearance",
-       German: "Vitja из штрафових регістрів із всіх країн, де ви перебували останніх 5 років"
+      ...defaultProps,
+      category:
+         "Витяг з штрафових регістрів із всіх краWн де ви перебували останніх 5 років (може бути не старшим ніж 3 місяці до моменту подання заяви)",
+      English: "Police Clearance",
+      German:
+         "Vitja из штрафових регістрів із всіх країн, де ви перебували останніх 5 років",
    },
    {
-       category: "Certificate of Good Standing",
-       English: "Certificate of Good Standing",
-       German: "Dovídka допропорядочності (Certificate of good Standing)"
+      ...defaultProps,
+      category:
+         "Довідка допропорядочності (Certificate of good Standing) видається відповідними структурами охорони здоровя де ви працювали по професі",
+      English: "Certificate of Good Standing",
+      German: "Dovídka допропорядочності (Certificate of good Standing)",
    },
    {
-       category: "Employment Certificate",
-       English: "Employment Certificate",
-       German: "Довідка із попереднього місця роботи"
+      ...defaultProps,
+      optional: "optional",
+      category:
+         "Довідка із попереднього місця роботи, що ви без обмежень могли працювати по професі",
+      English: "Employment Certificate",
+      German: "Довідка із попереднього місця роботи",
    },
    {
-       category: "Diploma",
-       English: "Diploma",
-       German: "Диплом про закінчену вищу освіту"
+      ...defaultProps,
+      category: "Диплом про закінчену вищу освіту",
+      English: "Diploma",
+      German: "Диплом про закінчену вищу освіту",
    },
    {
-       category: "Transcript",
-       English: "Transcript",
-       German: "Додаток до диплому, де вписаний огляд усіх пройдених предметів із годинами"
+      ...defaultProps,
+      category:
+         "Додаток до диплому, де вписаний огляд усіх пройдених предметів із годинами (не курікуюм)",
+      English: "Transcript",
+      German:
+         "Додаток до диплому, де вписаний огляд усіх пройдених предметів із годинами (не курікуюм)",
    },
    {
-       category: "Course Certificates",
-       English: "Course Certificates",
-       German: "Сертифікти про пройдені курси підвищення кваліфікації"
+      ...defaultProps,
+      category: "Додаток до диплому",
+      English: "",
+      German: "",
    },
    {
-       category: "Residence Registration",
-       English: "Residence Registration",
-       German: "Прописка в Німеччині"
-   }
-   // Add more categories as needed
+      ...defaultProps,
+      optional: "optional",
+      category: "Доказ про проходження практичних навичок протягом навчання",
+      English: "",
+      German: "",
+   },
+   {
+      ...defaultProps,
+      category: "Доказ про визнання остіти в одній із країн ЕС",
+      English: "",
+      German: "",
+   },
+   {
+      ...defaultProps,
+      category: "Характеристика із попередньго місця роботи",
+      English: "",
+      German: "",
+   },
+   {
+      ...defaultProps,
+      optional: "optional",
+      category: "Сертифікти про пройдені курси підвищення кваліфікаціЇ",
+      English: "Course Certificates",
+      German: "Сертифікти про пройдені курси підвищення кваліфікації",
+   },
 ];
-

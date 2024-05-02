@@ -1,0 +1,145 @@
+.table_container {
+   overflow-y: auto;
+   overflow-x: hidden;
+   padding-right: 5px;
+   min-height: 48vh;
+   position: relative;
+   width: 100%;
+   overflow-x: auto;
+
+   &::-webkit-scrollbar {
+      height: 7px;
+   }
+
+   &::-webkit-scrollbar-thumb {
+      background-color: white;
+
+      &:hover {
+         background-color: rgb(219, 219, 219);
+      }
+   }
+}
+
+.minWidth {
+   td {
+      min-width: 150px;
+   }
+}
+
+.table {
+   border-collapse: collapse;
+   width: 100%;
+   position: relative;
+   border-spacing: 10px;
+
+   td {
+      position: relative;
+      border: solid 1px transparent;
+
+      border-style: solid none;
+      padding: 10px;
+      background-color: transparent;
+      max-width: 150px;
+   }
+
+   td:first-child {
+      border-left-style: solid;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+   }
+
+   td:last-child {
+      border-right-style: solid;
+      border-bottom-right-radius: 10px;
+      border-top-right-radius: 10px;
+   }
+}
+
+.rating_wrapper {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.header {
+   z-index: 10;
+}
+
+.rowOdd {
+   background-color: rgba(255, 255, 255, 0.05);
+   border-top: 1px solid #37383a;
+   border-bottom: 1px solid #37383a;
+
+   border-top: 1px solid #37383a;
+   border-bottom: 1px solid #37383a;
+}
+
+.cellContent {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   text-align: left;
+   max-width: 200px;
+}
+
+.thead {
+   font-size: 14px;
+   tr {
+      text-transform: capitalize;
+      text-align: left;
+
+      th {
+         padding-right: 10px;
+
+         position: sticky;
+         top: 0;
+         z-index: 20;
+         background-color: transparent;
+         color: white;
+
+         &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+            right: 0;
+            height: 50%;
+            border-right: 1px solid white;
+         }
+
+         &:last-child::after {
+            border-right: none;
+         }
+      }
+   }
+
+   th {
+      padding: 1rem;
+   }
+}
+
+.tbody {
+   tr {
+      position: relative;
+
+      td {
+         position: relative;
+         padding: 1rem;
+         font-size: 14px;
+
+         &::first-letter {
+            text-transform: capitalize;
+         }
+      }
+   }
+}
+
+.clickable {
+   cursor: pointer;
+}
+
+.few_items {
+   span {
+      margin-left: 5px;
+   }
+}

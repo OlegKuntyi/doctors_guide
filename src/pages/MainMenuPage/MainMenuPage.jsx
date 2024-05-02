@@ -4,7 +4,7 @@ import {
    languagesMainMenu,
    main_menu_items,
 } from "../../constants/translation/main_menu";
-import useGetFlobalInfo from "../../hooks/useGetFlobalInfo";
+import useGetGlobalInfo from "../../hooks/useGetGlobalInfo";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
 
 import "./main_menu.css";
@@ -15,7 +15,7 @@ const MainMenuPage = () => {
       redirectToRegionPage,
       handleChangePage,
       selectedRegion,
-   } = useGetFlobalInfo();
+   } = useGetGlobalInfo();
 
    const returnLandDesc = () => {
       const desc = LANDS_INFO?.find((land) => land?.name === selectedRegion)

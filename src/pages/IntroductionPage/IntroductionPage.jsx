@@ -1,9 +1,9 @@
 import { localStorageGet } from "../../utils/localStorage";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
-import useGetFlobalInfo from "../../hooks/useGetFlobalInfo";
+import useGetGlobalInfo from "../../hooks/useGetGlobalInfo";
 
 const IntroductionPage = ({ handleNextPage }) => {
-   const { selectedLanguage, languages, handleChangePage } = useGetFlobalInfo();
+   const { selectedLanguage, languages, handleChangePage } = useGetGlobalInfo();
 
    return (
       <MainLayout>

@@ -2,7 +2,7 @@ import { languages, DEFAULT_LANGUAGE } from "../constants/translation/global";
 import { localStorageGet, localStorageSet } from "../utils/localStorage";
 import { useNavigate } from "react-router-dom";
 
-const useGetFlobalInfo = () => {
+const useGetGlobalInfo = () => {
    const selectedLanguage = localStorageGet(
       "selectedLanguage",
       DEFAULT_LANGUAGE
@@ -35,4 +35,4 @@ const useGetFlobalInfo = () => {
    };
 };
 
-export default useGetFlobalInfo;
+export default useGetGlobalInfo;

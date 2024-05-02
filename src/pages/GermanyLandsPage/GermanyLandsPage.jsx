@@ -1,9 +1,9 @@
 import GermanyMap from "../../components/GermanyMap/GermanyMap";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
-import useGetFlobalInfo from "../../hooks/useGetFlobalInfo";
+import useGetGlobalInfo from "../../hooks/useGetGlobalInfo";
 
 const GermanyLandsPage = ({ handleNextPage }) => {
-   const { selectedLanguage, languages, handleChangePage } = useGetFlobalInfo();
+   const { selectedLanguage, languages, handleChangePage } = useGetGlobalInfo();
 
    return (
       <MainLayout>
