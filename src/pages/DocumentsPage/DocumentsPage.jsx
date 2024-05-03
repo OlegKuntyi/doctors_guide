@@ -14,9 +14,9 @@ const DocumentsPage = () => {
    } = useGetGlobalInfo();
 
    const [tableData, setTableData] = useState(documents);
+   const savedData = localStorage.getItem("docs_table_data");
 
    useEffect(() => {
-      const savedData = localStorage.getItem("docs_table_data");
       if (savedData) {
          setTableData(JSON.parse(savedData));
       }
