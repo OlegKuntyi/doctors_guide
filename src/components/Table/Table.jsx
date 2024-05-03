@@ -8,7 +8,7 @@ const Table = ({
    searchedValue,
    maxHeight,
    maxWordsLength = 19,
-   setTableData
+   setTableData,
 }) => {
 
    return (
@@ -37,6 +37,7 @@ const Table = ({
                      index={index}
                      maxWordsLength={maxWordsLength}
                      setTableData={setTableData}
+                     tableData={data}
                   />
                ))}
             </tbody>

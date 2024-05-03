@@ -11,6 +11,12 @@
    padding: 0px 15px;
 }
 
+.containerBigger {
+   max-width: 1080px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+
 body {
    font-family: Arial, sans-serif;
    margin: 0;

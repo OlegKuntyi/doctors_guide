@@ -1,13 +1,12 @@
 const defaultProps = {
    optional: false,
    required: true,
-   is_exist: "check",
-   apostile: "check",
-   notary: "check",
-   application: "check",
-   translation: "check",
-   ready_copies: "check",
-   sent: "check",
+   is_exist: "not_check",
+   apostile: "not_check",
+   notary: "not_check",
+   translation: "not_check",
+   ready_copies: "not_check",
+   sent: "not_check",
 };
 
 // Подача заяви

@@ -12,6 +12,7 @@ const Label = styled.label`
    position: relative;
    display: inline-block;
    cursor: ${(props) => (props.disabled ? "not-allowed" : "pointer")};
+   user-select: none; 
 `;
 
 const rotate = keyframes`
@@ -87,7 +88,7 @@ export default function Checkbox({
             name={name}
             value={value}
             disabled={disabled}
-            checked={checked}
+            checked={value}
             onChange={onChange}
             defaultChecked={defaultValue}
          />

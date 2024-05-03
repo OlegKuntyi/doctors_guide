@@ -5,17 +5,29 @@
    position: relative;
    width: 100%;
    overflow-x: auto;
+   max-height: 70dvh;
+   padding-right: 5px;
 
    &::-webkit-scrollbar {
       height: 7px;
+      width: 4px;
    }
 
    &::-webkit-scrollbar-thumb {
-      background-color: white;
+      background-color: rgb(195, 195, 195);
 
       &:hover {
          background-color: rgb(219, 219, 219);
       }
+   }
+
+   &::-webkit-scrollbar-button {
+      display: block !important;
+      height: 45px;
+   }
+
+   &::-webkit-scrollbar-button:end {
+      display: none !important;
    }
 }
 
@@ -80,6 +92,7 @@
 
 .thead {
    font-size: 14px;
+
    tr {
       text-transform: capitalize;
       text-align: left;
@@ -88,9 +101,11 @@
          padding-right: 10px;
 
          position: sticky;
+
          top: 0;
          z-index: 20;
-         background-color: transparent;
+         background-color: #2a7c6f;
+
          color: white;
 
          &::after {
@@ -191,5 +206,9 @@
 }
 
 .hidden {
-   background-color: gray;
+   background-color: rgba(128, 128, 128, 0.436);
+}
+
+.crossed {
+   text-decoration: line-through;
 }

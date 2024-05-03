@@ -1,5 +1,3 @@
-import { useState, useRef } from "react";
-
 import styles from "./styles.module.scss";
 import cn from "classnames";
 import { useNavigate } from "react-router-dom";
@@ -8,6 +6,7 @@ import Checkbox from "../Checkbox/Checkbox";
 import docIcon from "../../assets/mark.svg";
 
 const checkboxProp = "check";
+const noNeedCheckboxText = "Не потрібно";
 
 const BodyItem = ({
    row,
@@ -16,10 +15,8 @@ const BodyItem = ({
    tableFor,
    maxWordsLength = 20,
    setTableData,
+   tableData,
 }) => {
-   const [checkbox, setCheckbox] = useState(false);
-   const [isHover, setIsHover] = useState(false);
-
    const changeHiddenProp = () => {
       setTableData((prevData) =>
          prevData.map((item) => {
@@ -31,7 +28,19 @@ const BodyItem = ({
       );
    };
 
-   console.log(row);
+   const handleCheckboxChange = (row, columnName) => {
+      setTableData((prevData) =>
+         prevData.map((item) => {
+            if (item.id === row.id) {
+               return {
+                  ...item,
+                  [columnName]: item[columnName] === "check" ? "not_check" : "check",
+               };
+            }
+            return item;
+         })
+      );
+   };
 
    return (
       <tr
@@ -43,35 +52,42 @@ const BodyItem = ({
       >
          {columns?.map((column, columnIndex) => (
             <td key={`cell-${index}-${columnIndex}`}>
-               {row?.[column?.name] === checkboxProp && !row?.hide && (
+               {row?.[column?.name]?.includes(checkboxProp) && (
                   <div className={styles.checkbox_wraapper}>
-                     {!row?.optional && (
-                        <img className={styles.req_img} src={docIcon} alt="" />
+                     {row?.[column?.required] && (
+                        <img
+                           className={styles.req_img}
+                           src={docIcon}
+                           alt="mark"
+                        />
                      )}
+
                      <Checkbox
-                        value={checkbox}
-                        onChange={({ target }) => setCheckbox(!checkbox)}
+                        value={row?.[column.name] === "check" ? true : false}
+                        onChange={() => handleCheckboxChange(row, column.name)}
                         disabled={row?.[column?.required]}
                      />
                   </div>
                )}
 
-               {row?.[column?.name] !== checkboxProp && (
+               {!row?.[column?.name]?.includes(checkboxProp) && (
                   <div className={styles.cellContent}>
                      <div>{row?.[column?.name]}</div>
                   </div>
                )}
 
-               {row?.optional && row?.[column?.name] !== checkboxProp && (
-                  <div className={styles.optional_cehckbox_wrapper}>
-                     <Checkbox
-                     label={row.hide ? "Виключено" : "Включено"}
-                        value={row.hide}
-                        defaultValue={row.optional}
-                        onChange={changeHiddenProp}
-                     />
-                  </div>
-               )}
+               {row?.optional &&
+                  !row?.[column?.name]?.includes(checkboxProp) &&
+                  row?.[column?.name] !== noNeedCheckboxText && (
+                     <div className={styles.optional_cehckbox_wrapper}>
+                        <Checkbox
+                           label={row.hide ? "Виключено" : "Включено"}
+                           value={row.hide}
+                           defaultValue={row.optional}
+                           onChange={changeHiddenProp}
+                        />
+                     </div>
+                  )}
             </td>
          ))}
       </tr>

@@ -1,6 +1,6 @@
 import Table from "../../components/Table/Table";
 import { documents } from "../../constants/translation/documents";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import useGetGlobalInfo from "../../hooks/useGetGlobalInfo";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
 import styles from "./styles.module.scss";
@@ -15,9 +15,20 @@ const DocumentsPage = () => {
 
    const [tableData, setTableData] = useState(documents);
 
+   useEffect(() => {
+      const savedData = localStorage.getItem("docs_table_data");
+      if (savedData) {
+         setTableData(JSON.parse(savedData));
+      }
+   }, []);
+
+   useEffect(() => {
+      localStorage.setItem("docs_table_data", JSON.stringify(tableData));
+   }, [tableData]);
+
    return (
       <MainLayout>
-         <div className="page page1 containerSmall mt-20">
+         <div className="page page1 containerBigger mt-20">
             <div className="firstPageImageBlock"></div>
             <div className={"main_menu__content"}>
                <div className={styles.table_wrapper}>
