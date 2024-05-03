@@ -1,5 +1,6 @@
 import Table from "../../components/Table/Table";
 import { documents } from "../../constants/translation/documents";
+import { useState } from "react";
 import useGetGlobalInfo from "../../hooks/useGetGlobalInfo";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
 import styles from "./styles.module.scss";
@@ -11,6 +12,8 @@ const DocumentsPage = () => {
       handleChangePage,
       selectedRegion,
    } = useGetGlobalInfo();
+
+   const [tableData, setTableData] = useState(documents);
 
    return (
       <MainLayout>
@@ -28,7 +31,8 @@ const DocumentsPage = () => {
                         { name: "ready_copies", label: "Завірені копії" },
                         { name: "sent", label: "Відправлено" },
                      ]}
-                     data={documents}
+                     data={tableData}
+                     setTableData={setTableData}
                   />
                </div>
                <button

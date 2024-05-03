@@ -8,10 +8,12 @@ const Table = ({
    searchedValue,
    maxHeight,
    maxWordsLength = 19,
+   setTableData
 }) => {
+
    return (
       <div style={{ maxHeight }} className={styles.table_container}>
-         <div className={styles.title}>Крок 1 - Подача заяв</div>
+         <div className={styles.title}> Подача заяв</div>
 
          <table className={cn(styles.table)}>
             <thead className={styles.thead}>
@@ -34,6 +36,7 @@ const Table = ({
                      columns={columns}
                      index={index}
                      maxWordsLength={maxWordsLength}
+                     setTableData={setTableData}
                   />
                ))}
             </tbody>
