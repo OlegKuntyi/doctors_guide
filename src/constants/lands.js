@@ -270,5 +270,10 @@ export const LANDS_INFO = [
       main_link:
          "https://landesverwaltungsamt.thueringen.de/soziales/gesundheitswesen/heilberufe/approbationen-und-berufserlaubnisse/approbation-fuer-auslaendische-studienabschluesse",
    },
+   doctor_palat: "http://www.laek-thueringen.de"
+
+
+
+
    
 ];
