@@ -194,6 +194,35 @@ const MainMenuPage = () => {
                                        );
                                     }
 
+                                    if (
+                                       sectionIndex === 1 &&
+                                       optionIdex === 2 &&
+                                       selectedRegion
+                                    ) {
+                                       return (
+                                          <div
+                                             className={"wrapper_with_choose"}
+                                          >
+                                             <a
+                                                className={
+                                                   "main_menu_section_link"
+                                                }
+                                                href={
+                                                   LANDS_INFO?.find(
+                                                      (land) =>
+                                                         land?.name ===
+                                                         selectedRegion
+                                                   )?.doctor_palat
+                                                }
+                                                target={item?.link?.startsWith("https") ? "_blank" : "_self"}
+                                                key={`${optionIdex}dlas`}
+                                             >
+                                                <div>{item[language]}</div>
+                                             </a>
+                                          </div>
+                                       );
+                                    }
+
                                     return (
                                        <a
                                           className={"main_menu_section_link"}
