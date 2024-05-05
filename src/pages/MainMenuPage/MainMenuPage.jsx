@@ -9,6 +9,28 @@ import MainLayout from "../../layouts/MainLayout/MainLayout";
 
 import "./main_menu.css";
 
+
+import React, { useState } from 'react';
+
+const Modal = ({ onClose, onEUFinish, onThirdCountryFinish }) => {
+   return (
+      <div className="modal">
+         <div className="modal-content">
+            <span className="close" onClick={onClose}>&times;</span>
+            <h2>Оберіть країну для закінчення:</h2>
+            {(sectionIndex === 0 && optionIdex === 2) && (
+               <>
+                  <button onClick={onEUFinish}>Закінчення в Євросоюзі</button>
+                  <button onClick={onThirdCountryFinish}>Закінчення в 3 країні</button>
+               </>
+            )}
+         </div>
+      </div>
+   );
+
+
+
+
 const MainMenuPage = () => {
    const {
       selectedLanguage: language,
@@ -26,6 +48,29 @@ const MainMenuPage = () => {
       } else return desc;
    };
 
+   const YourComponent = () => {
+   const [isModalOpen, setModalOpen] = useState(false);
+
+   const handleModalOpen = () => {
+      setModalOpen(true);
+   };
+
+   const handleModalClose = () => {
+      setModalOpen(false);
+   };
+
+   const handleEUFinish = () => {
+      // Логіка для закінчення в Євросоюзі
+   };
+
+   const handleThirdCountryFinish = () => {
+      // Логіка для закінчення в 3 країні
+   };
+
+
+
+
+   
    return (
       <MainLayout>
          <div className="page page1 containerSmall mt-20">
