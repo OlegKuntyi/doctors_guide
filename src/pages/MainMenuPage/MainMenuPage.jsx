@@ -64,7 +64,7 @@ const MainMenuPage = () => {
    };
 
    const handleThirdCountryFinish = () => {
-      // Логіка для закінчення в 3 країні
+    /documents
    };
 
 
