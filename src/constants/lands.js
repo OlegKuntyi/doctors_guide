@@ -15,6 +15,7 @@ export const LANDS_INFO = [
       },
       main_link:
          "https://rp.baden-wuerttemberg.de/themen/bildung/ausbildung/seiten/arzt-ausland/",
+  doctor_palat:"http://www.aerztekammer-bw.de"
    },
    {
       id: 2,
@@ -32,6 +33,7 @@ export const LANDS_INFO = [
       },
       main_link:
          "https://rp.baden-wuerttemberg.de/themen/bildung/ausbildung/seiten/arzt-ausland/",
+  doctor_palat:"http://www.blaek.de"
    },
    {
       id: 3,
@@ -48,6 +50,7 @@ export const LANDS_INFO = [
          ru: "Берлин: столица Германии, яркий центр политики, культуры и истории, привлекающий посетителей и жителей своей динамичной атмосферой. Город знаменит своей разнообразной художественной сценой, оживленной ночной жизнью и множеством музеев, рассказывающих о бурной истории Берлина. Он также значительный экосистема стартапов, привлекающая компании в области технологий, медиа и креативных отраслей.",
       },
       main_link: "https://service.berlin.de/dienstleistung/331391/",
+  doctor_palat:"http://www.aekb.de"
    },
    {
       id: 4,
@@ -66,6 +69,7 @@ export const LANDS_INFO = [
       },
       main_link:
          "https://lavg.brandenburg.de/lavg/de/gesundheit/akademische-heilberufe/anerkennung-auslaendischer-ausbildung/#",
+  doctor_palat:"http://www.laekb.de"
    },
    {
       id: 5,
@@ -84,6 +88,7 @@ export const LANDS_INFO = [
       },
       main_link:
          "https://www.gesundheit.bremen.de/gesundheit/berufe-im-gesundheitswesen/anerkennung-auslaendischer-approbationen-in-heilberufen-37585",
+  doctor_palat:"http://www.aekhb.de"
    },
    {
       id: 6,
@@ -101,6 +106,7 @@ export const LANDS_INFO = [
          de: "Hamburg: Als reiche Hafenstadt ist Hamburg für seine beeindruckende Architektur, zahlreiche Brücken und Wasserstraßen bekannt. Die Stadt hat eine starke Medien- und Musikindustrie, mit dem historischen Speicherstadtviertel und der neuen Elbphilharmonie als kulturelle Wahrzeichen. Hamburgs Hafen ist einer der größten in Europa und ein zentraler Handelsknotenpunkt.",
       },
       main_link: "https://www.hamburg.de/behoerdenfinder/info/11966145/n0/",
+ doctor_palat:"http://www.aerztekammer-hamburg.org"
    },
    {
       id: 7,
@@ -118,6 +124,7 @@ export const LANDS_INFO = [
       },
       main_link:
          "https://verwaltungsportal.hessen.de/leistung?leistung_id=L100001_8958940",
+  doctor_palat:"http://www.laekh.de"
    },
    {
       id: 8,
@@ -134,6 +141,7 @@ export const LANDS_INFO = [
          ru: "Мекленбург-Передняя Померания: Известна своим живописным побережьем Балтийского моря с длинными песчаными пляжами, островами, такими как Рюген и Узедом, и Мекленбургским озерным краем. Этот штат привлекает любителей природы и любителей водных видов спорта. Исторические ганзейские города Росток и Штральзунд предлагают богатые культурные впечатления и морскую историю.",
       },
       main_link: "https://www.lagus.mv-regierung.de/LPH/Approbationsberufe/",
+ doctor_palat: "http://www.aek-mv.de"
    },
    {
       id: 9,
@@ -151,6 +159,7 @@ export const LANDS_INFO = [
       },
       main_link:
          "https://www.nizza.niedersachsen.de/startseite/abteilung_1_approbationen_und_berufserlaubnisse_anerkennung_auslaendischer_berufsqualifikationen/approbationen-und-berufserlaubnisse-anerkennung-auslaendischer-berufsqualifikationen-150219.html",
+doctor_palat:"http://www.aekn.de"
    },
    {
       id: 10,
@@ -168,6 +177,7 @@ export const LANDS_INFO = [
       },
       main_link:
          "https://www.bezreg-muenster.de/de/gesundheit_und_soziales/zag/approbation_nrw/muenster/arzt/index.html",
+  doctor_palat:"http://www.aekwl.de"
    },
    {
       id: 11,
@@ -185,6 +195,7 @@ export const LANDS_INFO = [
       },
       main_link:
          "https://lsjv.rlp.de/de/unsere-aufgaben/arbeit/akademische-heilberufe/approbationen-und-berufserlaubnisse/",
+  doctor_palat: "http://www.laek-rlp.de" 
    },
    {
       id: 12,
@@ -202,6 +213,7 @@ export const LANDS_INFO = [
       },
       main_link:
          "https://www.saarland.de/las/DE/themen/gesundheitsberufe/approbation/approbation_node.html",
+   doctor_palat: "http://www.aerztekammer-saarland.de"
    },
    {
       id: 13,
@@ -218,6 +230,7 @@ export const LANDS_INFO = [
          de: "Sachsen: Mit einer starken kulturellen Identität, die in Städten wie Dresden und Leipzig mit ihrer reichen Kunst- und Musikgeschichte zum Ausdruck kommt, hat Sachsen eine blühende Kreativwirtschaft und ist bekannt für seine traditionsreichen Weihnachtsmärkte und das Erzgebirge.",
       },
       main_link: "https://www.lds.sachsen.de/soziales/index.asp?art_param=684",
+  doctor_palat: "http://www.slaek.de"
    },
    {
       id: 14,
@@ -235,6 +248,7 @@ export const LANDS_INFO = [
       },
       main_link:
          "https://lvwa.sachsen-anhalt.de/das-lvwa/landespruefungsamt-fuer-gesundheitsberufe/akademische-gesundheitsberufe/studium-im-ausland-berufserlaubnisse-und-approbationen",
+  doctor_palat: "http://www.aeksa.de"
    },
    {
       id: 15,
@@ -252,6 +266,8 @@ export const LANDS_INFO = [
       },
       main_link:
          "https://www.schleswig-holstein.de/DE/landesregierung/ministerien-behoerden/LASD/Aufgaben/Gesundheitsberufe/AkademischeHeilberufe/Arzt/ArztHauptartikel.html",
+  doctor_palat:
+ "http://www.aeksh.de"
    },
    {
       id: 16,
@@ -269,6 +285,8 @@ export const LANDS_INFO = [
       },
       main_link:
          "https://landesverwaltungsamt.thueringen.de/soziales/gesundheitswesen/heilberufe/approbationen-und-berufserlaubnisse/approbation-fuer-auslaendische-studienabschluesse",
+  doctor_palat:
+ "http://www.laek-thueringen.de"
    },
    
 ];
