@@ -21,6 +21,10 @@ const DocumentsPage = React.lazy(() =>
    import("../pages/DocumentsPage/DocumentsPage")
 );
 
+const WhatIsFSPPage = React.lazy(() =>
+   import("../pages/WhatIsFSPPage/WhatIsFSPPage")
+);
+
 export default function Routers() {
 
    return (
@@ -38,9 +42,10 @@ export default function Routers() {
             )}
 
             {/* Main */}
-            <Route path="/lands" element={<GermanyLandsPage />} />
-            <Route path="/main_menu" element={<MainMenuPage />} />
-            <Route path="/documents" element={<DocumentsPage />} />
+            <Route path={pathList.lands.path} element={<GermanyLandsPage />} />
+            <Route path={pathList.main_menu.path} element={<MainMenuPage />} />
+            <Route path={pathList.documents.path} element={<DocumentsPage />} />
+            <Route path={pathList.what_is_fsp.path} element={<WhatIsFSPPage />} />
 
             {/* NOT FOUND PAGE */}
             <Route

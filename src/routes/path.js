@@ -14,4 +14,7 @@ export const pathList = {
     documents: {
         path: '/documents'
     },
+    what_is_fsp: {
+        path: '/what_is_fsp'
+    },
 };

@@ -153,7 +153,7 @@ export const main_menu_items = {
                uk: "Що таке FSP?",
                ru: "Что такое FSP?",
                de: "Was ist FSP?",
-               link: "/fsp", // Link for the item
+               link: "/what_is_fsp",
             },
             {
                en: "Participation in FSP",
