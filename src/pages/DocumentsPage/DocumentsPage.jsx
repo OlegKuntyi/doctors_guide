@@ -60,7 +60,7 @@ const DocumentsPage = () => {
       if (totalCheckboxes > 0) {
          progress = (checkedCheckboxes / totalCheckboxes) * 100;
       }
-      return progress.toFixed(2);
+      return progress.toFixed(0);
    };
 
    useEffect(() => {
