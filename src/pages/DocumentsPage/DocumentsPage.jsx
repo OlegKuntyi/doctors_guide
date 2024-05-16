@@ -41,17 +41,11 @@ const DocumentsPage = () => {
 
       filteredData.forEach((item) => {
          Object.keys(item).forEach((key) => {
-            if (item[key] === "check") {
-               checkedCheckboxes++;
-            }
-            if (
-               key !== "id" &&
-               key !== "category" &&
-               key !== "English" &&
-               key !== "German" &&
-               item[key] !== "not_check"
-            ) {
-               totalCheckboxes++;
+            if (["is_exist", "apostile", "notary", "translation", "ready_copies", "sent"].includes(key)) {
+               totalCheckboxes++; // Count these checkboxes in total
+               if (item[key] === "check") {
+                  checkedCheckboxes++; // Count checked checkboxes
+               }
             }
          });
       });
