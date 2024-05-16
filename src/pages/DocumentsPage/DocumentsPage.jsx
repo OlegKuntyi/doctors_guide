@@ -1,9 +1,10 @@
 import Table from "../../components/Table/Table";
 import { documents } from "../../constants/translation/documents";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import useGetGlobalInfo from "../../hooks/useGetGlobalInfo";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
 import styles from "./styles.module.scss";
+import { useReactToPrint } from "react-to-print";
 
 const DocumentsPage = () => {
    const {
@@ -13,8 +14,13 @@ const DocumentsPage = () => {
       selectedRegion,
    } = useGetGlobalInfo();
 
+   const tableRef = useRef(null);
    const [tableData, setTableData] = useState(documents);
    const savedData = localStorage.getItem("docs_table_data");
+
+   const handlePrint = useReactToPrint({
+      content: () => tableRef.current,
+   });
 
    useEffect(() => {
       if (savedData) {
@@ -42,6 +48,7 @@ const DocumentsPage = () => {
                         { name: "ready_copies", label: "Завірені копії" },
                         { name: "sent", label: "Відправлено" },
                      ]}
+                     tableRef={tableRef}
                      data={tableData}
                      setTableData={setTableData}
                   />
@@ -52,6 +59,7 @@ const DocumentsPage = () => {
                >
                   &#8592;
                </button>
+               <button className={styles.printBtn} onClick={handlePrint}>Print</button>
             </div>
          </div>
       </MainLayout>

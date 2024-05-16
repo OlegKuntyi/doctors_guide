@@ -9,10 +9,14 @@ const Table = ({
    maxHeight,
    maxWordsLength = 19,
    setTableData,
+   tableRef,
 }) => {
-
    return (
-      <div style={{ maxHeight }} className={styles.table_container}>
+      <div
+         ref={tableRef}
+         style={{ maxHeight }}
+         className={styles.table_container}
+      >
          <div className={styles.title}> Подача заяв</div>
 
          <table className={cn(styles.table)}>

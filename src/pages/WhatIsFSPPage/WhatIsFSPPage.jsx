@@ -13,12 +13,8 @@ const WhatIsFSPPage = () => {
       selectedRegion,
    } = useGetGlobalInfo();
 
-   console.log(language);
-
    // Get the content for the selected language
    const content = FSP_INFO[language];
-   console.log(content);
-   console.log(FSP_INFO);
 
    return (
       <MainLayout>

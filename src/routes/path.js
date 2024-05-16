@@ -6,7 +6,7 @@ export const pathList = {
         path: '/login'
     },
     main_menu: {
-        path: '/main_manu'
+        path: '/main_menu'
     },
     lands: {
         path: '/lands'

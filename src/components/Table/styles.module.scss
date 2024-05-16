@@ -1,34 +1,42 @@
 .table_container {
    overflow-y: auto;
    overflow-x: hidden;
-   min-height: 48vh;
    position: relative;
    width: 100%;
    overflow-x: auto;
-   max-height: 70dvh;
    padding-right: 5px;
 
-   &::-webkit-scrollbar {
-      height: 7px;
-      width: 4px;
-   }
-
-   &::-webkit-scrollbar-thumb {
-      background-color: rgb(195, 195, 195);
-
-      &:hover {
-         background-color: rgb(219, 219, 219);
+   @media print {
+      table {
+         th, td {
+            font-size: 13px;
+         }
       }
    }
+   // min-height: 48vh;
+   // max-height: 70dvh;
 
-   &::-webkit-scrollbar-button {
-      display: block !important;
-      height: 45px;
-   }
+   // &::-webkit-scrollbar {
+   //    height: 7px;
+   //    width: 4px;
+   // }
 
-   &::-webkit-scrollbar-button:end {
-      display: none !important;
-   }
+   // &::-webkit-scrollbar-thumb {
+   //    background-color: rgb(195, 195, 195);
+
+   //    &:hover {
+   //       background-color: rgb(219, 219, 219);
+   //    }
+   // }
+
+   // &::-webkit-scrollbar-button {
+   //    display: block !important;
+   //    height: 45px;
+   // }
+
+   // &::-webkit-scrollbar-button:end {
+   //    display: none !important;
+   // }
 }
 
 .minWidth {
