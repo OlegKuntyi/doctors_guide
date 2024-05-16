@@ -1,5 +1,5 @@
 .what_is_fsp__content {
-   padding: 30px;
+   padding: 20px; 
 
    text-align: left;
 
@@ -9,6 +9,14 @@
 
    ul {
       list-style-type: disc;
-      margin-left: 30px;
+      margin-left: 30px; 
+   }
+
+   @media (max-width: 768px) {
+      padding: 10px; 
+      
+      ul {
+         margin-left: 15px;
+      }
    }
 }
