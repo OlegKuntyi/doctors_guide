@@ -180,10 +180,11 @@ export const documents = [
    {
       id: 13,
       ...defaultProps,
-      apostile: " ",
+      apostile: "",
       notary: " ",
       translation: " ",
       ready_copies: " ",
+      link: "https://doctors-guide-chi.vercel.app/language-study",
       category:
          "Доказ про достатні знання німецької мови. Мінімум сертифікат Б2",
       English: "",
@@ -198,6 +199,7 @@ export const documents = [
       notary: " ",
       translation: " ",
       ready_copies: " ",
+      link: "https://www.fuehrungszeugnis.bund.de/ffw/form/display.do?%24context=B87C1BAAEFAEFC7F88FA",
       category:
          "Довідка про несудимість із Німеччини ( у рази, якщо до подання заяви ви перебуваєте в Німеччині більш ніж 6 місяців)(опціонально) ",
    },

@@ -6,7 +6,6 @@ import Checkbox from "../Checkbox/Checkbox";
 import docIcon from "../../assets/mark.svg";
 
 const checkboxProp = "check";
-const noNeedCheckboxText = "Не потрібно";
 
 const BodyItem = ({
    row,
@@ -80,17 +79,30 @@ const BodyItem = ({
                   </div>
                )}
 
-               {row?.optional &&
-                  column?.name === 'category' && (
-                     <div className={styles.optional_cehckbox_wrapper}>
-                        <Checkbox
-                           label={row.hide ? "Виключено" : "Включено"}
-                           value={row.hide}
-                           defaultValue={row.optional}
-                           onChange={changeHiddenProp}
-                        />
-                     </div>
-                  )}
+               {row?.id === 13 && column.name === "apostile" && !row.hide && (
+                  <a className={styles.link} target="_blank" href={row?.link}>
+                     Вивчення мови
+                  </a>
+               )}
+
+               {row?.id === 14 && column.name === "apostile" && !row.hide && (
+                  <a className={styles.link} target="_blank" href={row?.link}>
+                     Оригінал надсилається прямо по місцю вимоги при подачі
+                     заяви вказується відомство куди повиннен надіслатися
+                     документ
+                  </a>
+               )}
+
+               {row?.optional && column?.name === "category" && (
+                  <div className={styles.optional_cehckbox_wrapper}>
+                     <Checkbox
+                        label={row.hide ? "Виключено" : "Включено"}
+                        value={row.hide}
+                        defaultValue={row.optional}
+                        onChange={changeHiddenProp}
+                     />
+                  </div>
+               )}
             </td>
          ))}
       </tr>

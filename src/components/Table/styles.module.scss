@@ -8,7 +8,8 @@
 
    @media print {
       table {
-         th, td {
+         th,
+         td {
             font-size: 13px;
          }
       }
@@ -219,4 +220,15 @@
 
 .crossed {
    text-decoration: line-through;
+}
+
+.link {
+   bottom: 0;
+   font-size: 16px;
+   font-weight: 500;
+   left: 25%;
+   z-index: 10;
+   width: 400px;
+   position: absolute;
+   top: 30%;
 }
