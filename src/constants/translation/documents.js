@@ -185,11 +185,25 @@ export const documents = [
       German: "",
    },
    {
-      id: 14,
+      id: 15,
       ...defaultProps,
       category: "Довідка про несудимість із Німеччини ( у рази, якщо до подання заяви ви перебуваєте в Німеччині більш ніж 6 місяців) ",
       English: "",
       German: "",
    },
+{
+      id: 16,
+      ...defaultProps,
+   optional: true,
+      apostile: "Не потрібно",
+   notary: "Не потрібно",
+   translation: "Не потрібно",
+   ready_copies: "Не потрібно",
+      category: "Прописка в Німеччині",
+      English: "",
+      German: "",
+   },
+
+   
 
 ];
