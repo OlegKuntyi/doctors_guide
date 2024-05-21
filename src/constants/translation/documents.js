@@ -96,7 +96,7 @@ export const documents = [
       id: 4,
       ...defaultProps,
       category:
-         "Витяг з штрафових регістрів із всіх країн де ви перебували останніх 5 років (може бути не старшим ніж 3 місяці до моменту подання заяви)",
+         "Витяг з штрафових регістрів із всіх країн де ви перебували останніх 5 років (мaє бути не старшим ніж 3 місяці до моменту подання заяви)",
       English: "Police Clearance",
       German:
          "Vitja из штрафових регістрів із всіх країн, де ви перебували останніх 5 років",
@@ -104,8 +104,6 @@ export const documents = [
    {
       id: 5,
       ...defaultProps,
-      optional: true,
-      hide: true,
       apostile: "Не потрібно",
       category:
          "Довідка допропорядочності (Certificate of good Standing) видається відповідними структурами охорони здоровя де ви працювали по професі",
@@ -138,15 +136,9 @@ export const documents = [
       German:
          "Додаток до диплому, де вписаний огляд усіх пройдених предметів із годинами (не курікуюм)",
    },
+   
    {
       id: 9,
-      ...defaultProps,
-      category: "Додаток до диплому",
-      English: "",
-      German: "",
-   },
-   {
-      id: 10,
       ...defaultProps,
       optional: true,
       hide: true,
@@ -156,7 +148,7 @@ export const documents = [
       German: "",
    },
    {
-      id: 11,
+      id: 10,
       ...defaultProps,
       optional: true,
       hide: true,
@@ -165,7 +157,7 @@ export const documents = [
       German: "",
    },
    {
-      id: 12,
+      id: 11,
       ...defaultProps,
       optional: true,
       hide: true,
@@ -175,7 +167,7 @@ export const documents = [
       German: "",
    },
    {
-      id: 13,
+      id: 12,
       ...defaultProps,
       optional: true,
       hide: true,
@@ -186,7 +178,7 @@ export const documents = [
       German: "Сертифікти про пройдені курси підвищення кваліфікації",
    },
    {
-      id: 14,
+      id: 13,
       ...defaultProps,
       apostile: " ",
       notary: " ",
@@ -199,15 +191,19 @@ export const documents = [
       German: "",
    },
    {
-      id: 15,
+      id: 14,
       ...defaultProps,
       optional: true,
       hide: true,
+      apostile: " ",
+      notary: " ",
+      translation: " ",
+      ready_copies: " ",
       category:
          "Довідка про несудимість із Німеччини ( у рази, якщо до подання заяви ви перебуваєте в Німеччині більш ніж 6 місяців)(опціонально) ",
    },
    {
-      id: 16,
+      id: 15,
       ...defaultProps,
       optional: true,
       hide: true,
