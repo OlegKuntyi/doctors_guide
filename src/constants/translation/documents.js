@@ -181,6 +181,11 @@ export const documents = [
 {
       id: 14,
       ...defaultProps,
+apostile: " ",
+   notary: " ",
+   translation: " ",
+   ready_copies: " ",
+
       category: "Доказ про достатні знання німецької мови. Мінімум сертифікат Б2",
       English: "",
       German: "",
@@ -189,6 +194,12 @@ export const documents = [
       id: 15,
       ...defaultProps,
       optional: true,
+      apostile: " ",
+   notary: " ",
+   translation: " ",
+   ready_copies: " ",
+ sent: "Оригінал надсилається пря по місцю вимоги при подачі заяви вказується відомство куди повиннен надіслатися документ",
+
       category: "Довідка про несудимість із Німеччини ( у рази, якщо до подання заяви ви перебуваєте в Німеччині більш ніж 6 місяців)(опціонально) ",
       English: "",
       German: "",
