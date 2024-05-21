@@ -177,4 +177,12 @@ export const documents = [
       English: "Course Certificates",
       German: "Сертифікти про пройдені курси підвищення кваліфікації",
    },
+{
+      id: 14,
+      ...defaultProps,
+      category: "Доказ про достатні знання німецької мови. Мінімум сертифікат Б2",
+      English: "",
+      German: "",
+   },
+
 ];
