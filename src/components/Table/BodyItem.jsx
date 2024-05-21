@@ -34,7 +34,8 @@ const BodyItem = ({
             if (item.id === row.id) {
                return {
                   ...item,
-                  [columnName]: item[columnName] === "check" ? "not_check" : "check",
+                  [columnName]:
+                     item[columnName] === "check" ? "not_check" : "check",
                };
             }
             return item;
@@ -61,12 +62,15 @@ const BodyItem = ({
                            alt="mark"
                         />
                      )}
-
-                     <Checkbox
-                        value={row?.[column.name] === "check" ? true : false}
-                        onChange={() => handleCheckboxChange(row, column.name)}
-                        disabled={row?.[column?.required]}
-                     />
+                     {!row?.hide && (
+                        <Checkbox
+                           value={row?.[column.name] === "check" ? true : false}
+                           onChange={() =>
+                              handleCheckboxChange(row, column.name)
+                           }
+                           disabled={row?.[column?.required]}
+                        />
+                     )}
                   </div>
                )}
 

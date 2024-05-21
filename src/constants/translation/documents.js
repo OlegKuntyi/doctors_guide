@@ -86,6 +86,7 @@ export const documents = [
       id: 3,
       ...defaultProps,
       optional: true,
+      hide: true,
       category: "Свідоцтво про зміну імя чи прізвища (опціонально)",
       English: "Proof of Name Change",
       German:
@@ -104,6 +105,7 @@ export const documents = [
       id: 5,
       ...defaultProps,
       optional: true,
+      hide: true,
       apostile: "Не потрібно",
       category:
          "Довідка допропорядочності (Certificate of good Standing) видається відповідними структурами охорони здоровя де ви працювали по професі",
@@ -114,6 +116,7 @@ export const documents = [
       id: 6,
       ...defaultProps,
       optional: true,
+      hide: true,
       category:
          "Довідка із попереднього місця роботи, що ви без обмежень могли працювати по професії (опціонально)",
       English: "Employment Certificate",
@@ -146,6 +149,7 @@ export const documents = [
       id: 10,
       ...defaultProps,
       optional: true,
+      hide: true,
       category:
          "Доказ про проходження практичних навичок протягом навчання (опціонально)",
       English: "",
@@ -155,6 +159,7 @@ export const documents = [
       id: 11,
       ...defaultProps,
       optional: true,
+      hide: true,
       category: "Доказ про визнання остіти в одній із країн ЕС (опціонально)",
       English: "",
       German: "",
@@ -163,6 +168,7 @@ export const documents = [
       id: 12,
       ...defaultProps,
       optional: true,
+      hide: true,
       apostile: "Не потрібно",
       category: "Характеристика із попередньго місця роботи (опціонально) ",
       English: "",
@@ -172,21 +178,23 @@ export const documents = [
       id: 13,
       ...defaultProps,
       optional: true,
+      hide: true,
       apostile: "Не потрібно",
       category:
          "Сертифікти про пройдені курси підвищення кваліфікації (опціонально)",
       English: "Course Certificates",
       German: "Сертифікти про пройдені курси підвищення кваліфікації",
    },
-{
+   {
       id: 14,
       ...defaultProps,
-apostile: " ",
-   notary: " ",
-   translation: " ",
-   ready_copies: " ",
+      apostile: " ",
+      notary: " ",
+      translation: " ",
+      ready_copies: " ",
 
-      category: "Доказ про достатні знання німецької мови. Мінімум сертифікат Б2",
+      category:
+         "Доказ про достатні знання німецької мови. Мінімум сертифікат Б2",
       English: "",
       German: "",
    },
@@ -194,27 +202,21 @@ apostile: " ",
       id: 15,
       ...defaultProps,
       optional: true,
-      apostile: " Оригінал надсилається прb по місцю ",
-      notary: " вимоги при подачі ",
-      translation: " заяви вказується відомство куди ",
-      ready_copies: " повиннен надіслатися документ ",
-      category: "Довідка про несудимість із Німеччини ( у рази, якщо до подання заяви ви перебуваєте в Німеччині більш ніж 6 місяців)(опціонально) ",
-      English: "",
-      German: "",
+      hide: true,
+      category:
+         "Довідка про несудимість із Німеччини ( у рази, якщо до подання заяви ви перебуваєте в Німеччині більш ніж 6 місяців)(опціонально) ",
    },
-{
+   {
       id: 16,
       ...defaultProps,
-   optional: true,
+      optional: true,
+      hide: true,
       apostile: "Не потрібно",
-   notary: "Не потрібно",
-   translation: "Не потрібно",
-   ready_copies: "Не потрібно",
+      notary: "Не потрібно",
+      translation: "Не потрібно",
+      ready_copies: "Не потрібно",
       category: "Прописка в Німеччині (опціонально)",
       English: "",
       German: "",
    },
-
-   
-
 ];
