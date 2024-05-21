@@ -81,8 +81,7 @@ const BodyItem = ({
                )}
 
                {row?.optional &&
-                  !row?.[column?.name]?.includes(checkboxProp) &&
-                  row?.[column?.name] !== noNeedCheckboxText && (
+                  column?.name === 'category' && (
                      <div className={styles.optional_cehckbox_wrapper}>
                         <Checkbox
                            label={row.hide ? "Виключено" : "Включено"}

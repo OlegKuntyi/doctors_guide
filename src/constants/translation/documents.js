@@ -184,7 +184,6 @@ export const documents = [
       notary: " ",
       translation: " ",
       ready_copies: " ",
-
       category:
          "Доказ про достатні знання німецької мови. Мінімум сертифікат Б2",
       English: "",
