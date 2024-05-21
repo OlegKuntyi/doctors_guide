@@ -103,6 +103,8 @@ export const documents = [
    {
       id: 5,
       ...defaultProps,
+      optional: true,
+      apostile: "Не потрібно",
       category:
          "Довідка допропорядочності (Certificate of good Standing) видається відповідними структурами охорони здоровя де ви працювали по професі",
       English: "Certificate of Good Standing",
@@ -159,6 +161,8 @@ export const documents = [
    {
       id: 12,
       ...defaultProps,
+      optional: true,
+      apostile: "Не потрібно",
       category: "Характеристика із попередньго місця роботи",
       English: "",
       German: "",
