@@ -96,7 +96,7 @@ export const documentSecond = [
             },
          },
          {
-            landName: "MecklenburgVorpommern",
+            landName: "Mecklenburg Vorpommern",
             link: "https://www.lagus.mv-regierung.de/serviceassistent/download?id=1664377",
             text: {
                en: "Fill out the application here",
@@ -126,7 +126,7 @@ export const documentSecond = [
             },
          },
          {
-            landName: " SachsenAnhalt",
+            landName: "Sachsen-Anhalt",
             link: " https://lvwa.sachsen-anhalt.de/fileadmin/Bibliothek/Politik_und_Verwaltung/LVWA/LVwA/Dokumente/5_famgesjugvers/507/ausland/Antrag_auf_Erteilung_der_Approbation-Berufserlaubnis.pdf",
             text: {
                en: "Fill out the application here",
@@ -156,7 +156,7 @@ export const documentSecond = [
             },
          },
          {
-            landName: " Sachsen",
+            landName: "Sachsen",
             link: "https://www.lds.sachsen.de/ref/?ID=10904&art_param=485&abteilung_id=4&referat_id=16",
             text: {
                en: "Fill out the application here",
@@ -171,7 +171,7 @@ export const documentSecond = [
             },
          },
          {
-            landName: "test",
+            landName: "Thüringen",
             link: "https://thformular.thueringen.de/thueform/dct/eject/htmlprint/C5E1F70311B776FAB55ECDF320F5A3FC.pdf?MANDANTID=26&FORMUID=GESUNDAUSB-227-TH-TLVWA",
             text: {
                en: "Fill out the application here",
