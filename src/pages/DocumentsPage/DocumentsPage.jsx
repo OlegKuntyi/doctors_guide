@@ -5,6 +5,8 @@ import useGetGlobalInfo from "../../hooks/useGetGlobalInfo";
 import MainLayout from "../../layouts/MainLayout/MainLayout";
 import styles from "./styles.module.scss";
 import { useReactToPrint } from "react-to-print";
+import { documentSecond } from "../../constants/translation/documentsSecond";
+import TableSecond from "./TableSecond/Table";
 
 const DocumentsPage = () => {
    const {
@@ -16,6 +18,7 @@ const DocumentsPage = () => {
 
    const tableRef = useRef(null);
    const [tableData, setTableData] = useState(documents);
+   const [tableDataSecond, setTableDataSecond] = useState(documentSecond);
    const [progress, setProgress] = useState(0);
    const savedData = localStorage.getItem("docs_table_data");
 
@@ -41,7 +44,16 @@ const DocumentsPage = () => {
 
       filteredData.forEach((item) => {
          Object.keys(item).forEach((key) => {
-            if (["is_exist", "apostile", "notary", "translation", "ready_copies", "sent"].includes(key)) {
+            if (
+               [
+                  "is_exist",
+                  "apostile",
+                  "notary",
+                  "translation",
+                  "ready_copies",
+                  "sent",
+               ].includes(key)
+            ) {
                totalCheckboxes++; // Count these checkboxes in total
                if (item[key] === "check") {
                   checkedCheckboxes++; // Count checked checkboxes
@@ -103,6 +115,18 @@ const DocumentsPage = () => {
                      tableRef={tableRef}
                      data={tableData}
                      setTableData={setTableData}
+                  />
+                  <TableSecond
+                     columns={[
+                        { name: "name", label: "Документ" },
+                        { name: "is_exist", label: "Наявно" },
+                        { name: "links", label: "Посилання на документ" },
+                        { name: "sent", label: "Відправлено" },
+                     ]}
+                     tableRef={tableRef}
+                     tableData={tableDataSecond}
+                     setTableData={setTableDataSecond}
+                     data={documentSecond}
                   />
                </div>
                <button
